@@ -13,11 +13,6 @@ const unsubscribe = store.subscribe(() => {
     // console.log(visibleExpenses);
 });
 
-store.dispatch(addExpense({ description: 'Water Bill', amount: 4500, createdAt: -43242 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 14500, createdAt: 24920 }));
-store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1000, amount: 59023 }));
-// store.dispatch(removeExpense(waterBill.expense));
-
 
 const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
