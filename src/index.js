@@ -7,6 +7,7 @@ import { addExpense, removeExpense } from './actions/expenses';
 import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 import './styles/styles.sass';
+import 'react-dates/lib/css/_datepicker.css';
 
 const store = cofigureStore();
 const unsubscribe = store.subscribe(() => {
