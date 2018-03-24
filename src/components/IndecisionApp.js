@@ -29,11 +29,27 @@ export default class IndecisionApp extends React.Component {
         }));
     };
     handleAddOption = (option) => {
+        const arr = ['another', 'men', 'man', 'ljubi', 'date', 'chat'];
         if (!option) {
             return 'Enter valid value to add item';
         } else if (this.state.options.indexOf(option) > -1) {
             return 'This option already exists';
+        } else if (option.includes("another")) {
+            return "Anka shouldn't do that."
+        } else if (option.includes("men")) {
+            return "Anka shouldn't do that."
+        } else if (option.includes("man")) {
+            return "Anka shouldn't do that."
+        } else if (option.includes("ljubi")) {
+            return "Anka shouldn't do that."
+        } else if (option.includes("date")) {
+            return "Anka shouldn't do that."
+        } else if (option.includes("chat")) {
+            return "Anka shouldn't do that."
+        } else if (option.includes("lub")) {
+            return "Anka shouldn't do that."
         }
+        
 
         this.setState((prevState) => ({
             options: prevState.options.concat(option)
