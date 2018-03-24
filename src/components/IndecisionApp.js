@@ -48,6 +48,10 @@ export default class IndecisionApp extends React.Component {
             return "Anka shouldn't do that."
         } else if (option.includes("lub")) {
             return "Anka shouldn't do that."
+        } else if (option.includes("drugim")) {
+            return "Anka shouldn't do that."
+        } else if (option.includes("mom")) {
+            return "Anka shouldn't do that."
         }
         
 
